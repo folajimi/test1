@@ -1,0 +1,33 @@
+<h1>Listing nouveau_tickets</h1>
+
+<table>
+  <tr>
+    <th>Name   </th>
+    <th>Seat#  </th>
+    <th>Adress</th>
+    <th>Price</th>
+    <th>Email address12</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nouveau_tickets.each do |nouveau_ticket| %>
+  <tr>
+    <td><%= nouveau_ticket.name %></td>
+    <td><%= nouveau_ticket.seat_id %></td>
+    <td><%= nouveau_ticket.adress %></td>
+    <td><%= nouveau_ticket.price %></td>
+    <td><%= nouveau_ticket.email_address %></td>
+    <td><%= nouveau_ticket.date %></td>
+    <td><%= link_to 'Show', nouveau_ticket %></td>
+    <td><%= link_to 'Edit', edit_nouveau_ticket_path(nouveau_ticket) %></td>
+    <td><%= link_to 'Destroy', nouveau_ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nouveau ticket', new_nouveau_ticket_path %>

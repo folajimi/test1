@@ -1,0 +1,21 @@
+<%= form_for(@add_sexe_to_jimbolan) do |f| %>
+  <% if @add_sexe_to_jimbolan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@add_sexe_to_jimbolan.errors.count, "error") %> prohibited this add_sexe_to_jimbolan from being saved:</h2>
+
+      <ul>
+      <% @add_sexe_to_jimbolan.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sexe %><br />
+    <%= f.text_field :sexe %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

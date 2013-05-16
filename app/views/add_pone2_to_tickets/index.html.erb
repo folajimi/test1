@@ -1,0 +1,23 @@
+<h1>Listing add_pone2_to_tickets</h1>
+
+<table>
+  <tr>
+    <th>Phone2</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @add_pone2_to_tickets.each do |add_pone2_to_ticket| %>
+  <tr>
+    <td><%= add_pone2_to_ticket.phone2 %></td>
+    <td><%= link_to 'Show', add_pone2_to_ticket %></td>
+    <td><%= link_to 'Edit', edit_add_pone2_to_ticket_path(add_pone2_to_ticket) %></td>
+    <td><%= link_to 'Destroy', add_pone2_to_ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Add pone2 to ticket', new_add_pone2_to_ticket_path %>

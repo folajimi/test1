@@ -1,0 +1,29 @@
+<h1>Listing jimbolands</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Age</th>
+    <th>Taille</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jimbolands.each do |jimboland| %>
+  <tr>
+    <td><%= jimboland.nom %></td>
+    <td><%= jimboland.adresse %></td>
+    <td><%= jimboland.age %></td>
+    <td><%= jimboland.taille %></td>
+    <td><%= link_to 'Show', jimboland %></td>
+    <td><%= link_to 'Edit', edit_jimboland_path(jimboland) %></td>
+    <td><%= link_to 'Destroy', jimboland, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Jimboland', new_jimboland_path %>

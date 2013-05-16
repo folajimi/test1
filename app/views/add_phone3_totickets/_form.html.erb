@@ -1,0 +1,21 @@
+<%= form_for(@add_phone3_toticket) do |f| %>
+  <% if @add_phone3_toticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@add_phone3_toticket.errors.count, "error") %> prohibited this add_phone3_toticket from being saved:</h2>
+
+      <ul>
+      <% @add_phone3_toticket.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

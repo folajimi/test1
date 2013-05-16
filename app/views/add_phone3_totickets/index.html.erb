@@ -1,0 +1,23 @@
+<h1>Listing add_phone3_totickets</h1>
+
+<table>
+  <tr>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @add_phone3_totickets.each do |add_phone3_toticket| %>
+  <tr>
+    <td><%= add_phone3_toticket.phone %></td>
+    <td><%= link_to 'Show', add_phone3_toticket %></td>
+    <td><%= link_to 'Edit', edit_add_phone3_toticket_path(add_phone3_toticket) %></td>
+    <td><%= link_to 'Destroy', add_phone3_toticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Add phone3 toticket', new_add_phone3_toticket_path %>

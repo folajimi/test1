@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nom: MyString
+  adresse: MyText
+  age: 9.99
+  taille: 1.5
+
+two:
+  nom: MyString
+  adresse: MyText
+  age: 9.99
+  taille: 1.5

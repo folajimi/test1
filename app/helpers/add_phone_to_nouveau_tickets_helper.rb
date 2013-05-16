@@ -1,0 +1,2 @@
+module AddPhoneToNouveauTicketsHelper
+end

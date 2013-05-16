@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nom:</b>
+  <%= @jimboland.nom %>
+</p>
+
+<p>
+  <b>Adresse:</b>
+  <%= @jimboland.adresse %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @jimboland.age %>
+</p>
+
+<p>
+  <b>Taille:</b>
+  <%= @jimboland.taille %>
+</p>
+
+
+<%= link_to 'Edit', edit_jimboland_path(@jimboland) %> |
+<%= link_to 'Back', jimbolands_path %>
